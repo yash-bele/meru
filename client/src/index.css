@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ef4444;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .inactive {
+        grid-template-rows: 0fr;
+    }
+
+    .active {
+        grid-template-rows: 1fr;
+    }
+}
