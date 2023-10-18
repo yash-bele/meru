@@ -1,17 +1,21 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Submenus from "./Submenus";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
+  const { pathname } = useLocation();
   const [openSidebar, setOpenSidebar] = useState(false);
   const [subMenu, setSubMenu] = useState("");
   const [navBG, setNavBG] = useState(false);
   window.addEventListener("scroll", () => {
     window.scrollY >= 35 ? setNavBG(true) : setNavBG(false);
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <>
