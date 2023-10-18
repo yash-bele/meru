@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { aboutQuerys } from "../configs/aboutQuerys";
+console.log(aboutQuerys);
 
 const About = () => {
   const navigate = useNavigate();

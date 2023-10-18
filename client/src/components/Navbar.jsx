@@ -69,11 +69,7 @@ const Navbar = () => {
             </ul>
             <Submenus subMenu={subMenu} setSubMenu={setSubMenu} />
           </div>
-          <Link
-            to="banner"
-            offset={-49.6}
-            className="relative group px-5 py-3 hover:bg-white/25 border-b-2 border-b-transparent hover:border-b-red-500 text-base cursor-pointer duration-200"
-          >
+          <Link className="relative group px-5 py-3 hover:bg-white/25 border-b-2 border-b-transparent hover:border-b-red-500 text-base cursor-pointer duration-200">
             <span className="flex items-center group-hover:text-red-500 duration-200">
               Meru biz
             </span>
