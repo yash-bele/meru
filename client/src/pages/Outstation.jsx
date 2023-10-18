@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import { outstations } from "../configs/outstations";
+console.log(outstations);
 
 const Outstation = () => {
   const { outstation } = useParams();
