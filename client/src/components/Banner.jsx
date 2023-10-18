@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { banner } from "../configs/banner";
+console.log(banner);
 
 const Banner = () => {
   const [option, setOption] = useState("outstation");
