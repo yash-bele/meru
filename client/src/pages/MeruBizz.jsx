@@ -180,7 +180,7 @@ const MeruBizz = () => {
                       <h2 className='text-gray-700	 text-xl	 text-center mb-3'>{el.title}</h2>
                       <ul className='text-md text-center '>
                         {el.description.map((el2, i) =>
-                          <li className='flex my-2   lg:text-start ' ><span className='mr-2 text-blue-700'>{<LiaArrowRightSolid />}</span>{el2}</li>
+                          <li className='flex my-2   text-md lg:text-start ' ><span className='mr-2 text-blue-700'>{<LiaArrowRightSolid />}</span>{el2}</li>
                         )}
                       </ul>
                     </div>
