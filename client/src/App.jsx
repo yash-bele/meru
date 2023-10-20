@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Outstation from "./pages/Outstation";
 import About from "./pages/About";
 import MeruBizz from "./pages/MeruBizz";
+import CollaboratewithUs from "./pages/CollaboratewithUs";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/outstation/:outstation" element={<Outstation />} />
             <Route path="about/:query" element={<About />} />
             <Route path="/meru-biz" element={<MeruBizz />} />
+            <Route path="/collobrate-with-us" element={<CollaboratewithUs />} />
           </Route>
         </Routes>
       </BrowserRouter>

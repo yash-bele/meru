@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`flex justify-between items-center font-montserrat px-5 md:px-20 sticky sm:fixed top-0 z-10 h-[49.6px] w-full select-none text-slate-700 ${
+        className={`flex justify-between items-center font-montserrat  px-5 md:px-20 sticky sm:fixed top-0 z-10 h-[49.6px] w-full select-none text-black ${
           navBG ? "bg-white/95 shadow" : "bg-transparent"
         }`}
       >
@@ -74,11 +74,13 @@ const Navbar = () => {
               Meru biz
             </span>
           </Link>
+
           <div className="relative group px-5 py-3 hover:bg-white/25 border-b-2 border-b-transparent hover:border-b-red-500 text-base cursor-pointer duration-200">
             <span className="flex items-center group-hover:text-red-500 duration-200">
               <span>About meru</span>
               <MdOutlineKeyboardArrowDown className="group-hover:-rotate-180 duration-200 text-red-500" />
             </span>
+
             <ul className="absolute top-[40px] group-hover:top-[49.6px] duration-100 invisible group-hover:visible opacity-0 group-hover:opacity-100 left-0 rounded-md text-sm border bg-white overflow-hidden border-slate-200 shadow w-full">
               <Link to="/about/our-journey">
                 <li className="px-5 py-2 hover:bg-slate-100 hover:text-red-500">
@@ -95,8 +97,14 @@ const Navbar = () => {
                   Our investors
                 </li>
               </Link>
+              
             </ul>
           </div>
+          <Link to="/collobrate-with-us" className="relative group px-5 py-3 hover:bg-white/25 border-b-2 border-b-transparent hover:border-b-red-500 text-base cursor-pointer duration-200">
+            <span className="flex items-center group-hover:text-red-500 duration-200">
+            Collaborate with us.
+            </span>
+          </Link>
           <AiOutlineMenuFold
             onClick={() => setOpenSidebar(true)}
             className="text-2xl ml-5 cursor-pointer text-red-500"

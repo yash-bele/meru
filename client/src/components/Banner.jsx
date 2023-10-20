@@ -16,7 +16,7 @@ const Banner = () => {
       className="bg-slate-900 h-auto sm:h-[calc(100vh)] bg-cover bg-center flex items-center justify-center font-montserrat text-slate-700"
     >
       <section>
-        <h1 className="text-white/75 text-7xl hidden xl:flex flex-col font-extralight w-[900px]">
+        <h1 className="text-white/80 text-7xl hidden xl:flex flex-col font-extralight w-[900px]">
           <span>Book Meru</span>
           <span>Best for {eval(`banner.${option}.option`)} rides</span>
         </h1>
