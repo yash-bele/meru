@@ -15,6 +15,7 @@ html::-webkit-scrollbar {
 
 ::-webkit-scrollbar-thumb {
     background-color: #ef4444;
+    color:#5c667c;
 }
 
 @tailwind base;
@@ -30,3 +31,4 @@ html::-webkit-scrollbar {
         grid-template-rows: 1fr;
     }
 }
+
