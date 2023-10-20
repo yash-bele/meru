@@ -34,7 +34,7 @@ const MeruBizz = () => {
             <h2 className='text-black/70 text-5xl  lg:text-6xl	 text-center'>
               Upgrade your business transportation.
             </h2>
-            <p className='text-gray-50 font-cookie  text-3xl lg:text-4xl  text-center	 ' >Guaranteed journeys | Unlock savings of up to 57% | Connecting 7000+ destinations across 100+ cities</p>
+            <p className='text-gray-50 font-cookie  text-3xl lg:text-4xl  text-center	mt-3 ' >Guaranteed journeys | Unlock savings of up to 57% | Connecting 7000+ destinations across 100+ cities</p>
           </div>
           <div className='w-full h-16'>
             <button className='bg-white  m-auto w-32 p-2 text-lg rounded md:mx-auto block mb-5 transition 
@@ -85,6 +85,7 @@ const MeruBizz = () => {
               modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
               slidesPerView={1}
               pagination={{ clickable: true }}
+              spaceBetween={20}
               // scrollbar={{ draggable: true }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log('slide change')}
@@ -118,14 +119,14 @@ const MeruBizz = () => {
         </div>
       </main>
 
-      <main className='mb-12'>
+      <main className='mb-12 p-4'>
 
-        <div className='w-4/5 mx-auto bg-white  '>
+        <div className='sm:w-4/5 mx-auto bg-white  '>
           <h2  className='text-gray-700 text-3xl lg:text-4xl text-center '>
             What makes <span className='text-red-500'> MeruBiz?</span>
             the preferred choice
           </h2>
-          <p className='text-2xl text-gray-600 text-start mb-5 mt-2  '>Keep your employees, admin team and stakeholders happy with MeruBiz.</p>
+          <p className='text-xl text-gray-600 text-start mb-5 mt-2 '>Keep your employees, admin team and stakeholders happy with MeruBiz.</p>
         </div>
 
         <div className=' flex justify-center mt-4 '>
@@ -152,12 +153,12 @@ const MeruBizz = () => {
                 // Define your breakpoints here
                
                 // when window width is >= 480px
-                480: {
-                  slidesPerView: 2,
-                },
-                640: {
-                  slidesPerView: 2,
-                },
+                // 480: {
+                //   slidesPerView: 2,
+                // },
+                // 640: {
+                //   slidesPerView: 2,
+                // },
                 768: {
                   slidesPerView: 2,
                 },
@@ -173,9 +174,9 @@ const MeruBizz = () => {
                   return <SwiperSlide key={i}  >
                     <div className=' m-0  mt-3 mb-7 delay-700	 transition duration-1000 ease-in-out   shadow-md rounded border-2  p-1 pl-3 h-64 relative hover:top-[0.2rem] '>
                       <h2 className='text-gray-700	 text-xl	 text-center mb-3'>{el.title}</h2>
-                      <ul className='text-md  '>
+                      <ul className='text-md text-center '>
                         {el.description.map((el2, i) =>
-                          <li className='flex my-2  lg:text-start' ><span className='mr-2 text-blue-700'>{<LiaArrowRightSolid />}</span>{el2}</li>
+                          <li className='flex my-2   lg:text-start ' ><span className='mr-2 text-blue-700'>{<LiaArrowRightSolid />}</span>{el2}</li>
                         )}
                       </ul>
                     </div>
@@ -204,7 +205,7 @@ const MeruBizz = () => {
       <main >
 
 
-        <div className='w-4/5 mx-auto  '>
+        <div className='sm:w-4/5 mx-auto  px-3 sm:p-0 overflow-x-scroll  '>
           <h2 className='text-gray-700	 text-4xl	 text-center mb-5 '>
             <span className='text-red-500'> MeruBiz </span>versus
             <span className='text-red-500'> alternative </span>options. 
@@ -214,7 +215,7 @@ const MeruBizz = () => {
           <table className='p-0 m-0 w-full my-4'>
         
 
-            <thead className='text-lg text-white' >
+            <thead className=' text-sm md:text-md lg:text-lg text-white' >
               <th className='font-normal bg-gray-500 p-2' >Evaluating services and their differences
               </th>
               <th className='font-normal p-2 bg-gray-500 '>MeruBizz.</th>
@@ -223,7 +224,7 @@ const MeruBizz = () => {
             </thead>
             <tbody  >
               {meruBizVersus.map((el) => {
-                return <tr className=' text-lg text-center  border-t-4 border-b-4 rounded shadow-md'>
+                return <tr className='text-sm  md:text-md lg:text-lg text-center  border-t-4 border-b-4 rounded shadow-md'>
                   <td className='  p-2'>{el.name}</td>
                   <td className='  p-2'>{el.meruBuz}</td>
                   <td className='  p-2'>{el.appBased}</td>

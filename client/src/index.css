@@ -15,7 +15,7 @@ html::-webkit-scrollbar {
 
 ::-webkit-scrollbar-thumb {
     background-color: #ef4444;
-    color:#5c667c;
+    color:#000000b7;
 }
 
 @tailwind base;
