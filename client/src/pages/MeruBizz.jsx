@@ -141,6 +141,10 @@ const MeruBizz = () => {
               onSlideChange={() => console.log('slide change')}
               loop={true}
               centeredSlides={true}
+              navigation={{
+                prevEl: navigationLeft.current,
+                nextEl: navigationRight.current,
+              }}
               onBeforeInit={(swiper) => {
                 swiper.params.navigation.prevEl = navigationLeft.current;
                 swiper.params.navigation.nextEl = navigationRight.current;
