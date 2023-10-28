@@ -5,16 +5,16 @@ import { outstations } from "../configs/outstations";
 console.log(outstations);
 
 const Outstation = () => {
-  const { outstation } = useParams();
+  const { route } = useParams();
   const [origin, setOrigin] = useState(false);
   const [destination, setDestination] = useState(false);
 
-  const one = eval(`outstations['${outstation}']`);
+  const one = eval(`outstations['${route}']`);
 
   useEffect(() => {
     setOrigin(false);
     setDestination(false);
-  }, [outstation]);
+  }, [route]);
 
   return (
     <>

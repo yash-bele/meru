@@ -1,3 +1,13 @@
+// oustation-mumbai img path 
+
+import mumbaiShirdiBaner from '../assets/outstation/oustation-mumbai/mumbai-to-shirdi.jpg'
+import mumbaiDestination from '../assets/outstation/oustation-mumbai/mumbai-to-shirdi-destination.jpg'
+
+
+
+
+
+
 export const outstations = {
   // MUMBAI === MUMBAI === MUMBAI // MUMBAI === MUMBAI === MUMBAI // MUMBAI === MUMBAI === MUMBAI
   "mumbai-to-goa": {
@@ -83,6 +93,46 @@ export const outstations = {
       para3:
         "Mumbai To Nashik cab services at Meru online booking website(meru.in) provides luxury, premium cars for hire with drivers at affordable prices. Nashik is known for the Godavari River and the Kumbh Mela. Book a one-way or round trip cab and head to Nashik today itself to enjoy a memorable trip. If you are looking to see one of the most amazing gatherings of people, then you should not miss the Kumbh Mela.This mela is held once every twelve years. Nashik is also called Mini Maharashtra. This is because of the soil and the climatic conditions here. Nashik is third, only after Mumbai and Pune in terms of the size of the cities in Maharashtra are concerned. Nashik is also famous for its wines. This is because the climate is perfect for growing grapes and more than 50% of the vineyards in India are in Nashik. Book a cab for one way trip, round trip, and multicity with Meru. Our outstation cab service for Mumbai to Nashik is always on time with no extra hidden charges.",
     },
+  },
+  "mumbai-to-shirdi":{
+    bannerImg:mumbaiShirdiBaner,
+    origin: {
+    name: "Mumbai",
+    img: "https://media.istockphoto.com/id/539018660/photo/taj-mahal-hotel-and-gateway-of-india.jpg?s=2048x2048&w=is&k=20&c=88iz53lAOjNsqosQAY2qB7fEebFW46qhPMkIiIaFvlw=",
+    subimg:
+      "https://content.r9cdn.net/rimg/dimg/50/92/cd4e2dcb-city-31288-16561d77fbf.jpg?width=2160&height=1215&xhint=3359&yhint=1924&crop=true&outputtype=webp",
+    para1:
+      `Mumbai, often affectionately called the "City of Dreams," has earned its reputation as one 
+      of India's most renowned and beloved cities. Its magnetic pull extends far and wide, attracting 
+      not only local residents but also visitors from across the country and around the globe. 
+      This city has an indescribable charisma that lures people in, leaving a lasting impression and a desire to return. 
+      The blend of opportunity, entertainment, and a vibrant atmosphere makes Mumbai a place where dreams can take flight.`,
+    para2:
+      `What sets Mumbai apart is its exceptional diversity. The city is a microcosm of India, housing a multitude of cultures,
+       traditions, and languages. It's where ancient customs coexist harmoniously with modern trends, creating a cultural mosaic 
+       that's unmatched. From historic temples and colonial-era architecture to the pulsating nightlife and high-rises, 
+       Mumbai encapsulates the essence of India's past, present, and future. Its unique blend of cultural influences makes
+        it a hub for art, music, cuisine, and more. Exploring Mumbai means embarking on a journey through time, 
+        witnessing the layers of history that shape its identity.`,
+    para3:
+      `In Mumbai, limitless possibilities await. Immerse yourself in its vibrant tapestry of neighborhoods, each with its own 
+      unique character. Indulge in delectable street food, a culinary adventure offering regional flavors. Explore iconic landmarks
+       like the Gateway of India and Chhatrapati Shivaji Terminus, or relax at Marine Drive and Juhu Beach. 
+       Whether it's Bollywood screenings, bustling markets, or tranquil sunsets over the Arabian Sea, Mumbai offers an array of 
+       unforgettable experiences. With every visit, new discoveries and lasting memories await, fueling the desire to return.`,
+  },
+  destination: {
+    name: "shirdi",
+    img: mumbaiDestination,
+    subimg:
+      "https://images.unsplash.com/photo-1602477141295-16c9eadf00b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1996&q=80",
+    para1:
+      "People love going on holidays every now and then. If you live in Mumbai, then it is difficult to get a long vacation because of the busy life and the time constraint. One of the things that you can do is take short trips over the weekend and come back rejuvenated. One such trip is Mumbai to Nashik which can be much easier when you choose Meru cab services.",
+    para2:
+      "Nashik is one of the most visited holy places in Maharashtra. Choose from a range of Mumbai to Nashik outstation cabs which are available at affordable fares starting at just Rs. 9/km, with one way, and round trip packages. Mumbai To Nashik cab services at Meru online booking website(meru.in) provides luxury, premium cars for hire with drivers at affordable prices. Nashik is known for the Godavari River and the Kumbh Mela. Book a one-way or round trip fares starting at just Rs. 9/km, with one way, and round trip packages.",
+    para3:
+      "Mumbai To Nashik cab services at Meru online booking website(meru.in) provides luxury, premium cars for hire with drivers at affordable prices. Nashik is known for the Godavari River and the Kumbh Mela. Book a one-way or round trip cab and head to Nashik today itself to enjoy a memorable trip. If you are looking to see one of the most amazing gatherings of people, then you should not miss the Kumbh Mela.This mela is held once every twelve years. Nashik is also called Mini Maharashtra. This is because of the soil and the climatic conditions here. Nashik is third, only after Mumbai and Pune in terms of the size of the cities in Maharashtra are concerned. Nashik is also famous for its wines. This is because the climate is perfect for growing grapes and more than 50% of the vineyards in India are in Nashik. Book a cab for one way trip, round trip, and multicity with Meru. Our outstation cab service for Mumbai to Nashik is always on time with no extra hidden charges.",
+  },
   },
   "mumbai-to-lonavala": {
     bannerImg:

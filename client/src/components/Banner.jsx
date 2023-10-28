@@ -8,12 +8,16 @@ const Banner = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
+   
+
+
   return (
     <section
       style={{
         backgroundImage: `url(${eval(`banner.${option}.img`)})`,
       }}
-      className="bg-slate-900 h-auto sm:h-[calc(100vh)] bg-cover bg-center flex items-center justify-center font-montserrat text-slate-700"
+      className="bg-slate-900 h-auto sm:h-[calc(100vh)]  bg-cover bg-center flex items-center justify-center font-montserrat text-slate-700"
     >
       <section>
         <h1 className="text-white/80 text-7xl hidden xl:flex flex-col font-extralight w-[900px]">
@@ -55,6 +59,7 @@ const Banner = () => {
           >
             Rentals
           </button>
+
         </div>
         <form onSubmit={handleSubmit} className="px-5 pb-5 flex flex-col">
           <h3 className="text-base mb-2">Book ride!</h3>

@@ -1,8 +1,29 @@
 import { FaBeer } from 'react-icons/fa';
-import priority from '../assets/diagnostic.png'
 import employeeCommute from '../assets/meru-biz/Employee-Commute.jpg'
 import airoplaneImg from '../assets/meru-biz/airoplane-miru-biz.jpg'
 import rentalCarImg from '../assets/meru-biz/rental-car.jpeg'
+
+import savingPng from '../assets/meru-biz/MerubizPreferred/salary.png'
+import secretPng from '../assets/meru-biz/MerubizPreferred/secret.png'
+import controlPng from '../assets/meru-biz/MerubizPreferred/qa.png'
+import financilPng from '../assets/meru-biz/MerubizPreferred/inspection.png'
+import transportEvent from '../assets/meru-biz/MerubizPreferred/roadshow.png'
+import securityPng from '../assets/meru-biz/MerubizPreferred/insurance.png'
+import skillePng from '../assets/meru-biz/MerubizPreferred/skills.png'
+import optimizeSaving from '../assets/meru-biz/MerubizPreferred/optimization.png'
+
+
+
+
+
+
+import priority from '../assets/meru-biz/MerbizAdvantage/priority.png'
+import cabAssured from '../assets/meru-biz/MerbizAdvantage/taxi.png'
+import driver from '../assets/meru-biz/MerbizAdvantage/driver.png'
+import protedtion from '../assets/meru-biz/MerbizAdvantage/protection.png'
+import bestPrice from '../assets/meru-biz/MerbizAdvantage/best-price.png'
+import fixedRate from '../assets/meru-biz/MerbizAdvantage/fixed-interest-rate.png'
+import  texGst    from '../assets/meru-biz/MerbizAdvantage/tax.png'
 
 
 
@@ -12,25 +33,25 @@ const meruBizAdvantages=[
     title:'Cab Allocation on Priority'
 },
 {
-    icon:priority,
+    icon:driver,
     title:'Chauffeur. Verification.'
 },
 {
-    icon:priority,
+    icon:protedtion,
     title:'Safety. Features.'
 },
 {
-    icon:priority,
+    icon:cabAssured,
     title:'Assured Cab. Availability'
 },
 {
-    icon:priority,
+    icon:bestPrice,
     title:'Preferential. Pricing.'
 },{
-    icon:priority,
+    icon:fixedRate,
     title:'Fixed. Rate'
 },{
-    icon:priority,
+    icon:texGst,
     title:'GST. Billing'
 },
 
@@ -77,15 +98,17 @@ const meruComprehensiveBusiness=[
 const merBizWhy = [
  {
     title:'Optimize your savings.',
+    pngIcon:savingPng,
     description:[
-        `Billing from one designated point to another`
+        `Billing point-to-point`
         , 'Special pricing'
-         ,'Generating invoices that adhere to GST requirements',
-         'A single dashboard for tracking all spending'
+         ,'GST-compliant invoicing.',
+         'Single dashboard for all expenses.'
     ]
  },
  {
     title:'Absolutely peerless convenience',
+    pngIcon:secretPng,
     description:[
         `Booking made easy: three steps.`
         ,'Guaranteed taxi availability'
@@ -95,6 +118,7 @@ const merBizWhy = [
  },
  {
     title:'Complete financial transparency',
+    pngIcon:financilPng,
     description:[
         `incitant receipts`
         , 'Dynamic real-time reporting.'
@@ -103,6 +127,7 @@ const merBizWhy = [
     ]
  }, {
     title:'Transportation for all events.',
+    pngIcon:transportEvent,
     description:[
         `Typical sedans and hatchbacks.`
         , 'Premium sedans'
@@ -112,6 +137,7 @@ const merBizWhy = [
  }
  , {
     title:'Guaranteed security.',
+    pngIcon:securityPng,
     description:[
         `Strict driver screening process`
         , 'ICE alert and trip status sharing '
@@ -121,6 +147,7 @@ const merBizWhy = [
  },
  {
     title:'Achieve full control',
+    pngIcon:controlPng,
     description:[
         `User-friendly dashboard.`
         , 'Monitor and control rides remotely.'
@@ -130,24 +157,27 @@ const merBizWhy = [
  },
  {
     title:'Continuous support',
+    pngIcon:skillePng,
     description:[
         `Dedicated round-the-clock support.`
         , 'Tailorable and versatile services.'
-         ,'Highly skilled and polite customer support.',
+         ,'Expert and courteous support.',
          'Regular maintenance and feedback..'
     ]
  },
  {
     title:'Optimize your savings.',
+    pngIcon:savingPng,
     description:[
-        `Billing from one designated point to another`
+        `Billing point-to-point`
         , 'Special pricing'
-         ,'Generating invoices that adhere to GST requirements',
-         'A single dashboard for tracking all spending'
+         ,'GST-compliant invoicing.',
+         'Single dashboard for all expenses.'
     ]
  },
  {
     title:'Achieve full control',
+    pngIcon:controlPng,
     description:[
         `User-friendly dashboard.`
         , 'Monitor and control rides remotely.'

@@ -1,12 +1,17 @@
 import { BsPersonFill, BsArrowBarRight } from "react-icons/bs";
-import navigation from "../navigation/nav";
+import { sidebarNavData } from "../navigation/nav"; 
 import { Link } from "react-router-dom";
+import SideBarNav from "./SideBarNav";
+
 const Sidebar = ({ openSidebar, setOpenSidebar }) => {
+
+
+
   return (
     <main
-      className={`ml-auto bg-white w-72 h-full duration-200 ${
+      className={`ml-auto bg-white w-[300px] h-full   duration-200 ${
         openSidebar ? "mr-0" : "-mr-72"
-      }`}
+      } grid grid-cols-1  grid-rows-[5rem_1fr]`}
     >
       <section className="flex items-center justify-between px-5  shadow">
         <div className="flex items-center space-x-2.5 p-2">
@@ -29,14 +34,9 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
           className="text-red-500 text-2xl cursor-pointer"
         />
       </section>
-      <section>
+      <section className='overflow-y-scroll'>
         {
-          navigation.map((el)=>{
-            return  <Link to={el.path} className="p-4 text-md cursor-pointer hover:bg-red-400 block
-                     hover:text-white  transition ease-in duration-300 ">
-                     {el.name}
-                    </Link>
-          })
+          <SideBarNav navArr ={sidebarNavData}/>
         }
       </section>
 

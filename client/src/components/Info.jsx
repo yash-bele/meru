@@ -1,6 +1,6 @@
 const Info = () => {
   return (
-    <main className="mx-5 md:mx-20 my-20 font-montserrat text-slate-700 space-y-10">
+    <main className="mx-5 md:mx-20 my-20 font-montserrat text-slate-700 space-y-10 ">
       <section className="flex flex-col-reverse lg:flex-row items-center justify-center space-x-0 lg:space-x-32">
         <div className="w-auto md:w-[700px] mt-2.5 lg:mt-0">
           <h1 className="text-xl md:text-3xl">

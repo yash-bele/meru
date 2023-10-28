@@ -25,19 +25,18 @@ const MeruBizz = () => {
 
     >
       <section style={{ backgroundImage: `url(${ merBizImg })`, }} className='bg-cover '>
-        <div className='min-h-auto w-full m-full bg-white/10 sm:p-4 lg:flex  min-h-[fit-content]	sm:h-[100vh] bg-cover mb-12'>
-        <div className='lg:w-2/5 xl:w-2/4 flex  justify-center flex-col items-center pt-12 ' >
+        <div className='min-h-auto w-fu bg-black/10 sm:p-4 lg:flex  min-h-[fit-content]	sm:h-[100vh] bg-cover mb-12'>
+        {/* <div className='lg:w-3/4 xl:w-2/5  flex  justify-center flex-col items-center pt-12 ' >
           <img src={svgUpgrade} alt="" className='h-40' />
-        </div>
-        <div className=' flex flex-col justify-center  lg:w-3/5 xl:w-2/4 '>
-          <div className='mb-5'>
-            <h2 className='  text-5xl	 text-center text-white/80 lg:text-7xl   font-extralight'>
+        </div> */}
+        <div className=' flex flex-col justify-center items-center  w-full '>
+            <h2 className='text-white/75 text-5xl  lg:text-6xl	 text-center mb-3'>
               Upgrade your business transportation.
             </h2>
-            <p className='flex my-2 text-white  text-4xl lg:text-start font-cookie' >Guaranteed journeys | Unlock savings of up to 57% | Connecting 7000+ destinations across 100+ cities</p>
-          </div>
-          <div className='w-full h-16'>
-            <button className='bg-white  m-auto w-32 p-2 text-lg rounded md:mx-auto block mb-5 relative  transition ease-in duration-300  hover:text-xl hover:py-3 hover:w-[10rem] hover:bottom-[-0.2rem]'>
+            <p className='flex my-2 text-white  text-4xl lg:text-start w-3/5 mb-3 ' >Guaranteed journeys | Unlock savings of up to 57% | Connecting 7000+ destinations across 100+ cities</p>
+
+          <div className='w-full h-16 mb-3'>
+            <button className='bg-white mt-4  m-auto w-32 p-2 text-lg rounded md:mx-auto block mb-5 relative  transition ease-in duration-300   hover:bottom-[-0.2rem]'>
               Get Started
             </button>
           </div>
@@ -54,8 +53,11 @@ const MeruBizz = () => {
             <div className='grid lg:grid-cols-3 gap-2 sm:grid-cols-2'>
               {
                 meruBizAdvantages.map((el, i) => {
-                  return <div key={i} className=' border rounded mb-5 p-3 flex shadow-md   transition ease-in duration-300 flex-col items-center  hover:shadow-xl'
+                  return <div key={i} className=' border rounded mb-5 p-3 flex shadow-md   transition ease-in duration-300   items-center  hover:shadow-xl'
                   >
+                    <div className='h-16 w-16 mr-2'>
+                           <img src={el.icon} className='h-16 w-16 object-cover'/>
+                    </div>
                     <h2 className='text-xl text-center text-gray-700'>{el.title}</h2>
                   </div>
                 })
@@ -65,7 +67,7 @@ const MeruBizz = () => {
         </div>
       </section>
 
-      <section className='mb-12 bg-gray-100 p-4'>
+      <section className=' bg-gray-100 p-4'>
         <div className='w-full sm:w-4/5 mx-auto'>
           <h2  className='text-gray-700 text-3xl lg:text-4xl text-center '>
             Our Comprehensive
@@ -74,11 +76,11 @@ const MeruBizz = () => {
             and
             <span className='text-red-500'> Services</span>
           </h2>
-          <p className='flex my-2   text-lg lg:text-start '>Access top-tier solutions designed to streamline the transportation requirements of your esteemed guests and workforce</p>
+          <p className='flex my-2   text-xl lg:text-start '>Access top-tier solutions designed to streamline the transportation requirements of your esteemed guests and workforce</p>
         </div>
 
         <div className=' flex justify-center mt-4 '>
-          <div className='w-full sm:w-4/5 bg-white rounded border p-3 shadow-md '>
+          <div className='w-full sm:w-3/4  '>
             <Swiper
               // install Swiper modules
               modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -100,43 +102,43 @@ const MeruBizz = () => {
               {
                 meruComprehensiveBusiness.map((el, i) => {
                   return <SwiperSlide key={i} >
-                    <div className='xl:h-64  mx-auto my-2  flex flex-col-reverse xl:flex-row   '>
-                      <div className='lg:w-2/3 flex items-start justify-start flex-col  '>
+                    <div className='bg-white grid grid-cols-[1fr_12rem] p-4'>
+                      <div className='  '>
                         <h2 className='text-gray-700 text-lg text-center	w-full lg:text-2xl	 lg:text-start  mb-3'>{el.title}</h2>
                         <p className=' text-center lg:text-start text-md lg:text-md'>
                           {el.description}
                         </p>
                       </div>
-                      <div style={{ backgroundImage: `url(${ el.imagePath })`, }} className=' xl:w-64 xl:h-64 rounded sm:w-100  ml-3 sm:h-64 h-64 bg-cover   overflow-hidden ' ></div>
+                      <div style={{ backgroundImage: `url(${ el.imagePath })`, }} className=' xl:w-40 xl:h-40 rounded sm:w-100  ml-3 sm:h-40 h-40 bg-cover   ' ></div>
                     </div>
 
                   </SwiperSlide>
                 })
-              }         ...
+              }         
             </Swiper>
           </div>
         </div>
       </section>
 
-      <section className='mb-12 p-4'>
+      <section className='mb-12  bg-gray-100 pt-12' >
 
-        <div className='sm:w-4/5 mx-auto bg-white  '>
+        <div className='sm:w-3/5 mx-auto   '>
           <h2  className='text-gray-700 text-3xl lg:text-4xl text-center '>
             What makes <span className='text-red-500'> MeruBiz?</span>
             the preferred choice
           </h2>
-          <p className='flex my-2   text-lg lg:text-start ' >Keep your employees, admin team and stakeholders happy with MeruBiz.</p>
+          <p className='flex my-2   text-xl lg:text-start ' >Keep your employees, admin team and stakeholders happy with MeruBiz.</p>
         </div>
 
         <div className=' flex justify-center mt-4 '>
-          <div className='w-4/5 bg-white rounded   '>
+          <div className='w-4/5  rounded   '>
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               slidesPerView={'auto'}
               pagination={{ clickable: true }}
-              spaceBetween={5}
+              spaceBetween={3}
               onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log('slide change')}
+      
               loop={true}
               centeredSlides={true}
               navigation={{
@@ -147,13 +149,10 @@ const MeruBizz = () => {
                 swiper.params.navigation.prevEl = navigationLeft.current;
                 swiper.params.navigation.nextEl = navigationRight.current;
               }}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
+              
               breakpoints={{
                 768: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                 },
                 1024: {
                   slidesPerView: 3,
@@ -162,12 +161,17 @@ const MeruBizz = () => {
             >
               {
                 merBizWhy.map((el, i) => {
-                  return <SwiperSlide key={i}  >
-                    <div className=' m-0  mt-3 mb-7 delay-700	  transition ease-in duration-300   shadow-md rounded border-2  p-1 pl-3 h-64 relative hover:top-[0.2rem] '>
-                      <h2 className='text-gray-700	 text-xl	 text-center mb-3'>{el.title}</h2>
-                      <ul className='text-md text-center '>
+                  return <SwiperSlide key={i} className='h-full' >
+                    <div className=' flex flex-col bg-white items-center m-0  min-h-[20rem] pb-8 mt-3 mb-7 delay-700	 cursor-pointer  border    rounded-md  p-2 relative '>
+                        <div className='flex  w-full h-16 mb-4'>
+                           <img src={el.pngIcon} className='h-16 w-16 object-cover'/>
+                           <h2 className='text-gray-700	 text-xl	w-full mb-2 ml-4 text-center'>{el.title}</h2>
+                        </div>
+                      <ul className='text-md  w-full '>
                         {el.description.map((el2, i) =>
-                          <li className='flex my-2   text-md lg:text-start ' ><span className='mr-2 text-blue-700'>{<LiaArrowRightSolid />}</span>{el2}</li>
+                            <li className='text-black-700 border p-2 my-1  hover:bg-blue-50  
+                                            transition ease-in duration-300 
+                            ' >{el2}</li>
                         )}
                       </ul>
                     </div>
